@@ -19,7 +19,7 @@ $db = $database->getConnection();
 </head>
 
 
-<body>
+<body class="home">
 
 <header>
         <nav>

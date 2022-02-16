@@ -23,7 +23,7 @@ $result = $db->query($sql);
 	<br/><br/>
 	<div class="containeradmin">
 		<div class="formulaireadmin">
-	 <form action="./add_php/add_hebergement.php" method="post" name="form1" >
+	 <form action="./add_php/add_hebergement.php" method="post" name="form1" enctype="multipart/form-data" >
 		<table>
 			<tr> 
 				<td>Titre du gite</td>
@@ -34,8 +34,12 @@ $result = $db->query($sql);
 				<td><input type="text" name="desc" class="input-form"></td>
 			</tr>
 			<tr> 
+				<td>Photo</td>
+				<td><input type="file" name="img" class="input-form" multiple accept="image/png, image/jpg"></td>
+			</tr>
+			<tr> 
 				<td>nombres de lits</td>
-				<td><input type="number" name="nb" class="input-form"></td>
+				<td><input type="number" name="nb" class="input-form" min="0"></td>
 			</tr>
 			<tr> 
 				<td>nombres de douches</td>
@@ -68,6 +72,7 @@ if ($result->rowCount() > 0){
 		<th> ID </th>
 		<th> Titre </th>
 		<th> Description </th>
+		<th> Image </th>
 		<th> Lits </th>
 		<th> salle de bains </th>
 		<th> localisation </th>
@@ -87,6 +92,7 @@ while($rows = $result->fetch(PDO::FETCH_ASSOC)) {
 <td> <?php echo $rows['id']; ?> </td> 
 <td> <?php echo $rows['accommodation_title']; ?> </td> 
 <td> <?php echo $rows['description']; ?> </td> 
+<td> <?php echo $rows['image']; ?> </td> 
 <td> <?php echo $rows['number_of_beds']; ?> </td> 
 <td> <?php echo $rows['number_of_bathrooms']; ?> </td> 
 <td> <?php echo $rows['geographic_location']; ?> </td> 

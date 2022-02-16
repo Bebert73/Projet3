@@ -1,10 +1,13 @@
 <?php
 
 
-include_once './config_php/database.php';
+include_once './config_php/Database.php';
 $database = new Database();
 $db = $database->getConnection();
 
+
+$sql = "SELECT * FROM accommodation";
+$result = $db->query($sql);
 
 ?> 
 
@@ -61,9 +64,12 @@ $db = $database->getConnection();
 
             </div>
         </div>
+<div class="list_annonces">
 
     </main>
 
+
+    
     <footer>
         <div class="footbar">
 
