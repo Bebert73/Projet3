@@ -1,12 +1,10 @@
 <?php
 
-include_once './php/Database.php';
+include_once './config_php/Database.php';
 $database = new Database();
 $db = $database->getConnection();
 ?>
 
-
-<!-- test -->
 <!DOCTYPE html>
 <html lang="en">
 

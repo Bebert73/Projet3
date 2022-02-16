@@ -1,6 +1,6 @@
 <?php
-include_once './php/Database.php';
-include_once './php/add_hebergement.php';
+include_once './config_php/Database.php';
+include_once './add_php/add_hebergement.php';
 $database = new Database();
 $db = $database->getConnection();
 
@@ -23,7 +23,7 @@ $result = $db->query($sql);
 	<br/><br/>
 	<div class="containeradmin">
 		<div class="formulaireadmin">
-	 <form action="./php/add_hebergement.php" method="post" name="form1" >
+	 <form action="./add_php/add_hebergement.php" method="post" name="form1" >
 		<table>
 			<tr> 
 				<td>Titre du gite</td>
@@ -91,7 +91,8 @@ while($rows = $result->fetch(PDO::FETCH_ASSOC)) {
 <td> <?php echo $rows['number_of_bathrooms']; ?> </td> 
 <td> <?php echo $rows['geographic_location']; ?> </td> 
 <td> <?php echo $rows['price']; ?> </td> 
-<td><a class="suppr" href="form_add.php?supprimer_tache=<?php echo $taches['id'] ?>"> X</a></td>
+<td><a href="./add_php/delete.php?acco=<?php echo $rows['id'] ?>">supprimer</a></td>
+
 </tr>
 <?php 
   }
