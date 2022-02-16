@@ -71,7 +71,13 @@ nav
     color: antiquewhite;
 }
 
+tr{
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
 
+
+}
 .formulairelarge
 {
     width: 60%;
@@ -119,11 +125,13 @@ a{
 
 input{
     background-color: transparent;
-    border: 0.2rem solid #858585;
+    border: .4rem solid #858585;
     border-radius: 60em;
     color: rgb(255, 255, 255);
     font-size: .9375rem;
     font-weight: 300;
+    
+    
 }
 
 .form-content{
