@@ -153,5 +153,10 @@ input{
     color: white;
     transform: scale(120%);
 }
+table{
+    border: 10px;
+    border-radius: 60em;
+    width: 50%;
 
+}
 /* pull */
