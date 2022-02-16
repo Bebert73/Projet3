@@ -27,7 +27,7 @@ $result = $db->query($sql);
 	<br/><br/>
 	<div id="msg"></div>
 	<form action="./add_php/add_hebergement.php" method="post" enctype="multipart/form-data" name="form1" >
-		<table width="25%" border="0">
+		<table class="table-form">
 			<tr> 
 				<td class="form-text" >Titre</td>
 				<td><input type="text" name="acc"></td>
@@ -71,7 +71,7 @@ $result = $db->query($sql);
 			<?php 
 			if ($result->rowCount() > 0){
 			?> 
-			<table algin="center" border="1px" style="width:600px"; line-height:40px;> 
+			<table > 
 				<tr>
 					<th colspan="8"><h2> Gite enregister </h2> </th>
 			</tr>

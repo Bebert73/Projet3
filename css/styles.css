@@ -171,4 +171,11 @@ table{
 .form-text{
     text-align: center ;
 }
+
+.table-form{
+    text-align:"center"; 
+    border:"1px"; 
+    width:"600px"; 
+    line-height:40px;
+}
 /* pull */
