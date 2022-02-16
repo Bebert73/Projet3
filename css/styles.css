@@ -3,20 +3,7 @@
     padding:0;
     box-sizing: border-box;
 }
-
-a{
-    text-decoration: none;
-    color: white;
-}
-
-
-p{
-    color: aliceblue;
-}
-
-
-/* Page Index.php */
-.home
+body
 {
     background-image:url(https://wallpaperaccess.com/full/435709.jpg);
     background-repeat: no-repeat;
@@ -26,72 +13,6 @@ p{
     background-color: transparent;
 }
 
-
-/* Page Form_add.php */
-.form_add
-{
-    background-image:url(https://wallpaperaccess.com/full/435709.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: transparent;
-}
-
-/* Page Admin.php */
-.admin 
-{
-    background-image:url("../pic/background_panel_admin.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    margin-top: 27em;
-}
-
-
-/* Form_Add.php */
-
-.input-form{
-    background-color: transparent;
-    border: 0.2rem solid #858585;
-    border-radius: 60em;
-    color: rgb(255, 255, 255);
-    font-weight: 300;
-}
-
-tr{
-    color: white;
-}
-
-
-.containeradmin
-{
-    width: 100%;
-    max-width: 3000px;
-    height: 550px;
-    z-index: 0;
-    padding-bottom: 1000px;
-    color: antiquewhite;
-}
-
-
-.formulaireadmin
-{
-    width: 60%;
-    height: 450px;
-    background-color: rgba(36, 36, 36, 0.733);
-    border-radius: 2%;
-    margin: 20 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around 10px;
-    padding: 10 100px ;
-    color: antiquewhite;
-}
-
-/* Index.php */
 header{
     width: 100%;
     max-width: 3000px;
@@ -127,26 +48,6 @@ nav
     
 }
 
-.input_index{
-    background-color: transparent;
-    border: 0.2rem solid #858585;
-    border-radius: 60em;
-    color: rgb(255, 255, 255);
-    font-weight: 300;
-}
-
-
-.input_nombre{
-    background-color: transparent;
-    border: 0.2rem solid #858585;
-    border-radius: 60em;
-    color: rgb(255, 255, 255);
-    font-weight: 300;
-}
-
-option{
-    color: black;
-}
 
 .formulaire
 {
@@ -159,6 +60,7 @@ option{
     flex-direction: column;
     justify-content: space-around;
     padding: 0 100px ;
+    
 }
 .containerlarge
 {
@@ -168,21 +70,29 @@ option{
     z-index: 0;
     padding-bottom: 1000px;
     color: antiquewhite;
+
 }
 
+tr{
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
 
+
+}
 .formulairelarge
 {
     width: 60%;
-    height: 450px;
+    width: 0 auto;
     background-color: rgba(36, 36, 36, 0.733);
     border-radius: 2%;
     margin: 200px auto;
-    display: flex;
+    display:flex;
     flex-direction: column;
     justify-content: space-around 10px;
     padding: 10 100px ;
     color: antiquewhite;
+    
 }
 
 p{
@@ -216,6 +126,25 @@ a{
     color: rgb(255, 255, 255);
 }
 
+input{
+    background-color: transparent;
+    border: .3rem solid #858585;
+    border-radius: 60em;
+    color: rgb(255, 255, 255);
+    font-size: .9375rem;
+    font-weight: 300;
+    
+    
+}
+
+.form-content{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 250px;
+    
+}   
+
 .search{
     color: rgb(255, 255, 255);
     font-size: 30px;
@@ -227,5 +156,19 @@ a{
     color: white;
     transform: scale(120%);
 }
+table{
+    border: 10px;
+    border-radius: 60em;
+    width: 50%;
 
+}
+
+.sup{
+    display: flex;
+    justify-content: center;
+}
+
+.form-text{
+    text-align: center ;
+}
 /* pull */
