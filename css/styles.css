@@ -33,9 +33,12 @@ nav
     
 }
 
+.menu{
+    transition: transform 0.3s;
+}
+
 .menu:hover{
-    transform: scale(110%);
-    transition: width 0.1s, height 0.1s, background-color 0.1s, transform 0.8s;
+    transform: scale(125%); /* Animation */
 }
 
 .container
@@ -154,7 +157,7 @@ input{
 
 .search:hover{
     color: white;
-    transform: scale(120%);
+    transform: scale(130%);
 }
 table{
     border: 10px;
