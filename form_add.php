@@ -112,3 +112,4 @@ while($rows = $result->fetch(PDO::FETCH_ASSOC)) {
 </form>
 </body>
 </html> 
+<!-- form -->
