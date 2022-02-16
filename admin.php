@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Admin</title>
 </head>
-<body>
+<body class="home">
 
 <main>
         <div class="container">
@@ -29,28 +29,13 @@
 
 
 <?php
-
 include_once './config_php/Database.php';
+include_once './add_php/add_hebergement.php';
 $database = new Database();
-$db = $database->getConnection();
-?>
+$db = $database->getConnection();?>
+<!-- test -->
+<br><br>
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Admin</title>
-</head>
-
-<body class="admin">
-
-<a href="form_add.php"><button class="btn-grad">Ajouter des logements</button></a>
-<a href="create_categorie.php"><button class="btn-grad">Ajouter une catégorie</button></a>
-
-</body>
+<!-- hello -->
 
 </html>

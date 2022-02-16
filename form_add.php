@@ -27,31 +27,32 @@ $result = $db->query($sql);
 		<table>
 			<tr> 
 				<td>Titre du gite</td>
-				<td><input type="text" name="acc" class="input-form"></td>
+				<td><input type="text" name="acc" class="input-form" required></td>
 			</tr>
 			<tr> 
 				<td>description</td>
-				<td><input type="text" name="desc" class="input-form"></td>
+				<td><input type="text" name="desc" class="input-form" required></td>
 			</tr>
 			<tr> 
 				<td>Photo</td>
-				<td><input type="file" name="img" class="input-form" multiple accept="image/png, image/jpg"></td>
+				<td><input type="file" name="img" class="input-form" multiple accept="image/png, image/jpg" required></td>
 			</tr>
+			
 			<tr> 
 				<td>nombres de lits</td>
-				<td><input type="number" name="nb" class="input-form" min="0"></td>
+				<td><input type="number" name="nb" class="input-form" min="0" required></td>
 			</tr>
 			<tr> 
 				<td>nombres de douches</td>
-				<td><input type="number" name="nbt" class="input-form"></td>
+				<td><input type="number" name="nbt" class="input-form" required></td>
 			</tr>
 			<tr> 
 				<td>localisation</td>
-				<td><input type="text" name="gl" class="input-form"></td>
+				<td><input type="text" name="gl" class="input-form" required></td>
 			</tr>
 			<tr> 
 				<td>prix</td>
-				<td><input type="number" name="price" class="input-form"></td>
+				<td><input type="number" name="price" class="input-form" required></td>
 			</tr>
 				<td></td>
 				<td><input type="submit" name="Submit" value="Ajouter" class="input-form"> </td>
@@ -80,7 +81,6 @@ if ($result->rowCount() > 0){
 		<th> delete </th>
 
 </t>
-</div>
 
 <?php
 while($rows = $result->fetch(PDO::FETCH_ASSOC)) {
@@ -109,6 +109,8 @@ while($rows = $result->fetch(PDO::FETCH_ASSOC)) {
 
 
 ?> 
+</div>
+
 </form>
 </body>
 </html> 
