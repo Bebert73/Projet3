@@ -1,9 +1,10 @@
 <?php
-
-
-include_once './php/database.php';
+include_once './config_php/database.php';
 $database = new Database();
 $db = $database->getConnection();
+
+$sql = "DELETE FROM accommodation WHERE id = ?";
+$q = $db->prepare($sql);
 
 
 ?> 

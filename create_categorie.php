@@ -1,6 +1,6 @@
 <?php
-include_once './php/Database.php';
-include_once './php/add_categorie.php';
+include_once './config_php/Database.php';
+include_once './add_php/add_categorie.php';
 $database = new Database();
 $db = $database->getConnection();
 
@@ -18,7 +18,7 @@ $result = $db->query($sql);
 	<a href="./admin.php">Home</a>
 	<br/><br/>
 	<div id="msg"></div>
-	<form action="./php/add_categorie.php" method="post" name="form1" >
+	<form action="./add_php/add_categorie.php" method="post" name="form1" >
 		<table width="25%" border="0">
 			<tr> 
 				<td>Name</td>
@@ -55,7 +55,7 @@ while($rows = $result->fetch(PDO::FETCH_ASSOC)) {
 <tr>
 <td> <?php echo $rows['id']; ?> </td> 
 <td> <?php echo $rows['name']; ?> </td> 
-<td><a class="suppr" href="form_add.php?supprimer_tache=<?php echo $taches['id'] ?>"> X</a></td>
+<td><a href="supprimer.php?categorie=<?php $rows['id'] ?>"> X</a></td>
 
 </tr>
 <?php 
