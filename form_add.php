@@ -1,6 +1,6 @@
 <?php
-include_once './php/Database.php';
-include_once './php/add_hebergement.php';
+include_once './config_php/Database.php';
+include_once './add_php/add_hebergement.php';
 $database = new Database();
 $db = $database->getConnection();
 
