@@ -44,7 +44,7 @@ nav
 
 .formulaire
 {
-    width: 50%;
+    width: 40%;
     height: 450px;
     background-color: rgba(36, 36, 36, 0.733);
     border-radius: 2%;
@@ -67,7 +67,7 @@ nav
 
 .formulairelarge
 {
-    width: 70%;
+    width: 60%;
     height: 450px;
     background-color: rgba(36, 36, 36, 0.733);
     border-radius: 2%;
@@ -81,6 +81,11 @@ nav
 
 p{
     color: aliceblue;
+    padding: 40px 50px;
+}
+h1{
+    color: aliceblue;
+    padding: 20px 1px;
 }
 a{
     text-decoration: none;
