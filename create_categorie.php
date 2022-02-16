@@ -41,22 +41,19 @@ if ($result->rowCount() > 0){
 		<t>
 		<th> ID </th>
 		<th> Name </th>
-		<th> delete </th>
 
 </t>
 
 
 <?php
-while($rows = $result->fetch(PDO::FETCH_ASSOC)) {
+while($acco = $result->fetch(PDO::FETCH_ASSOC)) {
 
 	?>
 	
 	<form action="" name="form2">
 <tr>
-<td> <?php echo $rows['id']; ?> </td> 
-<td> <?php echo $rows['name']; ?> </td> 
-<td><a href="supprimer.php?categorie=<?php $rows['id'] ?>"> X</a></td>
-
+<td> <?php echo $acco['id']; ?> </td> 
+<td> <?php echo $acco['name']; ?> </td> 
 </tr>
 <?php 
   }

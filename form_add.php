@@ -91,7 +91,8 @@ while($rows = $result->fetch(PDO::FETCH_ASSOC)) {
 <td> <?php echo $rows['number_of_bathrooms']; ?> </td> 
 <td> <?php echo $rows['geographic_location']; ?> </td> 
 <td> <?php echo $rows['price']; ?> </td> 
-<td><a class="suppr" href="form_add.php?supprimer_tache=<?php echo $taches['id'] ?>"> X</a></td>
+<td><a href="./add_php/delete.php?acco=<?php echo $rows['id'] ?>">supprimer</a></td>
+
 </tr>
 <?php 
   }
