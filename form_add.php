@@ -23,7 +23,7 @@ $result = $db->query($sql);
 	<br/><br/>
 	<div class="containeradmin">
 		<div class="formulaireadmin">
-	 <form action="./php/add_hebergement.php" method="post" name="form1" >
+	 <form action="./add_php/add_hebergement.php" method="post" name="form1" >
 		<table>
 			<tr> 
 				<td>Titre du gite</td>
