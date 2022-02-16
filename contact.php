@@ -21,12 +21,12 @@ $db = $database->getConnection();
 
 <body>
 
-    <header>
+<header>
         <nav>
-            <a href="index.php">Accueil</a>
-            <a href="accommodation.php">Hebergement</a>
-            <a href="contact.php">Contactez-nous</a>
-            <a href="about.php">A-propos</a>
+            <a class="menu" href="index.php">Accueil</a>
+            <a class="menu" href="accommodation.php">Hebergement</a>
+            <a class="menu" href="contact.php">Contactez-nous</a>
+            <a class="menu" href="about.php">A-propos</a>
         </nav>
     </header>
 

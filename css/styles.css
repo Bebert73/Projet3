@@ -35,7 +35,6 @@ nav
 
 .menu:hover{
     transform: scale(110%);
-  
     transition: width 0.1s, height 0.1s, background-color 0.1s, transform 0.8s;
 }
 
