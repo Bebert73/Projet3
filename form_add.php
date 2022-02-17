@@ -73,15 +73,15 @@ $result = $db->query($sql);
 			?> 
 			<table > 
 				<tr>
-					<th colspan="8"><h2> Gite enregister </h2> </th>
 			</tr>
+			
 					<t>
 					<th> ID </th>
 					<th> Titre </th>
 					<th> Description </th>
 					<th> image </th>
 					<th> Lits </th>
-					<th> salle de bains </th>
+					<th> Douche </th>
 					<th> localisation </th>
 					<th> prix </th>
 					<th> delete </th>
