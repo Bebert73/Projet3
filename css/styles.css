@@ -98,6 +98,10 @@ tr{
     
 }
 
+.button-admin{
+    color: black;
+}
+
 p{
     color: aliceblue;
     padding: 40px 50px;

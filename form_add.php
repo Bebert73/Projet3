@@ -21,9 +21,9 @@ $result = $db->query($sql);
 <body>
 <main>
         <div class="containerlarge">
-            
-	<a href="./admin.php">ADMIN FORM</a>
+        
 	<div class="formulairelarge">
+	<a class="retour" href="./admin.php">Retour</a>
 	<br/><br/>
 	<div id="msg"></div>
 	<form action="./add_php/add_hebergement.php" method="post" enctype="multipart/form-data" name="form1" >

@@ -15,8 +15,8 @@
             <div class="formulaire">
             <h1 class="title">Administrator command </h1>
                 <div class="two choices" >
-                 <button><a href="form_add.php">Ajouter des logements</a> </button>
-                <button><a href="create_categorie.php">Ajout de categorie</a> </button>
+                 <button><a class="button-admin" href="form_add.php">Ajouter des logements</a> </button>
+                <button><a class="button-admin" href="create_categorie.php">Ajout de categorie</a> </button>
                 </div>
 
 </div>
