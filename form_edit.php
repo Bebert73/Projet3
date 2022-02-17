@@ -3,7 +3,7 @@ include_once './config_php/Database.php';
 $database = new Database();
 $db = $database->getConnection();
 include_once './add_php/edit_hebergement.php';
-$sql = "SELECT * FROM accommodation WHERE id = 3 LIMIT 1 ";
+$sql = "SELECT * FROM accommodation ";
 $result = $db->query($sql);
 while($rows = $result->fetch(PDO::FETCH_ASSOC)) {
 
