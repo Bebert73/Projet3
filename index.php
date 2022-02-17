@@ -1,5 +1,8 @@
 <?php
-include_once './add_php/connexion.php';
+include_once './config_php/Database.php';
+$database = new Database();
+$db = $database->getConnection();
+
 $sql = "SELECT * FROM accommodation";
 $result = $db->query($sql);
 

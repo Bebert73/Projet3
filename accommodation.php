@@ -1,5 +1,8 @@
 <?php
-include_once './add_php/connexion.php';
+include_once './config_php/Database.php';
+$database = new Database();
+$db = $database->getConnection();
+
 $sql = "DELETE FROM accommodation WHERE id = ?";
 $q = $db->prepare($sql);
 

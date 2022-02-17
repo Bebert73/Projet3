@@ -38,7 +38,9 @@ class Database{
 
     Database connexion
 
-include_once './add_php/connexion.php';
+include_once './php/database.php';
+$database = new Database();
+$db = $database->getConnection();
 
 
 -->

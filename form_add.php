@@ -1,5 +1,9 @@
 <?php
-include_once './add_php/connexion.php';
+
+include_once './config_php/Database.php';
+$database = new Database();
+$db = $database->getConnection();
+
 include_once './add_php/add_hebergement.php';
 
 $sql = "SELECT * FROM accommodation";
@@ -78,6 +82,7 @@ $result = $db->query($sql);
 					<th> Douche </th>
 					<th> localisation </th>
 					<th> prix </th>
+					<th>Edit</th>
 					<th> delete </th>
 			<?php
 			while($rows = $result->fetch(PDO::FETCH_ASSOC)) {
@@ -94,7 +99,8 @@ $result = $db->query($sql);
 			<td> <?php echo $rows['number_of_bathrooms']; ?> </td> 
 			<td> <?php echo $rows['geographic_location']; ?> </td> 
 			<td> <?php echo $rows['price']; ?> </td> 
-			<td><a class="sup"  href="./add_php/delete.php?acco=<?php echo $rows['id'] ?>">x</a></td>
+			<td><a class="edit"  href="./form_edit.php?edit=<?php echo $rows['id'] ?>">🟡</a></td>
+			<td><a class="sup"  href="./add_php/delete.php?acco=<?php echo $rows['id'] ?>">🔴</a></td>
 			</tr>
 			<?php 
  			 }
