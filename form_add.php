@@ -36,7 +36,7 @@ $result = $db->query($sql);
 			</tr>
 			<tr> 
 				<td class="form-text" >Image</td>
-				<td><input type="file" name="img"></td>
+				<td><input type="file" name="img" multiple></td>
 			</tr>
 
 			<tr> 
@@ -70,10 +70,6 @@ $result = $db->query($sql);
 			if ($result->rowCount() > 0){
 			?> 
 			<table > 
-				<tr>
-			</tr>
-			
-					<t>
 					<th> ID </th>
 					<th> Titre </th>
 					<th> Description </th>
@@ -83,8 +79,6 @@ $result = $db->query($sql);
 					<th> localisation </th>
 					<th> prix </th>
 					<th> delete </th>
-
-			</t>
 			<?php
 			while($rows = $result->fetch(PDO::FETCH_ASSOC)) {
 
@@ -95,8 +89,7 @@ $result = $db->query($sql);
 			<td> <?php echo $rows['id']; ?> </td> 
 			<td> <?php echo $rows['accommodation_title']; ?> </td> 
 			<td> <?php echo $rows['description']; ?> </td> 
-			<td> <?php echo $rows['image']; ?> </td> 
-			<img src="" alt="">
+			<td> <img style="width:100%" src="./pic/<?php echo $rows['image']; ?>" alt=""> </td> 
 			<td> <?php echo $rows['number_of_beds']; ?> </td> 
 			<td> <?php echo $rows['number_of_bathrooms']; ?> </td> 
 			<td> <?php echo $rows['geographic_location']; ?> </td> 
