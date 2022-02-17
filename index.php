@@ -1,10 +1,5 @@
 <?php
-
-
 include_once './add_php/connexion.php';
-
-
-
 $sql = "SELECT * FROM accommodation";
 $result = $db->query($sql);
 
@@ -59,7 +54,7 @@ $result = $db->query($sql);
                         </select>                 
                     </div>
                 </form>
-                <a href="https://youtube.com"><h5 class="search">Search</h5> </a>
+                <a href="accommodation.php"><h5 class="search">Search</h5> </a>
 
             </div>
         </div>
