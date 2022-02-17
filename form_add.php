@@ -1,8 +1,6 @@
 <?php
-include_once './config_php/Database.php';
+include_once './add_php/connexion.php';
 include_once './add_php/add_hebergement.php';
-$database = new Database();
-$db = $database->getConnection();
 
 $sql = "SELECT * FROM accommodation";
 $result = $db->query($sql);
@@ -98,6 +96,7 @@ $result = $db->query($sql);
 			<td> <?php echo $rows['accommodation_title']; ?> </td> 
 			<td> <?php echo $rows['description']; ?> </td> 
 			<td> <?php echo $rows['image']; ?> </td> 
+			<img src="" alt="">
 			<td> <?php echo $rows['number_of_beds']; ?> </td> 
 			<td> <?php echo $rows['number_of_bathrooms']; ?> </td> 
 			<td> <?php echo $rows['geographic_location']; ?> </td> 
