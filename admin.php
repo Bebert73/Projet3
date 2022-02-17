@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Admin</title>
 </head>
-<body>
+<body class="home">
 
 <main>
         <div class="container">
@@ -15,8 +15,8 @@
             <div class="formulaire">
             <h1 class="title">Administrator command </h1>
                 <div class="two choices" >
-                 <button><a href="form_add.php">Ajouter des logements</a> </button>
-                <button><a href="create_categorie.php">Ajout de categorie</a> </button>
+                 <button><a class="button-admin" href="form_add.php">Ajouter des logements</a> </button>
+                <button><a class="button-admin" href="create_categorie.php">Ajout de categorie</a> </button>
                 </div>
 
 </div>
@@ -29,8 +29,8 @@
 
 
 <?php
-include_once './php/Database.php';
-include_once './php/add_hebergement.php';
+include_once './config_php/Database.php';
+include_once './add_php/add_hebergement.php';
 $database = new Database();
 $db = $database->getConnection();?>
 <!-- test -->

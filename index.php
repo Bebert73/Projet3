@@ -1,10 +1,13 @@
 <?php
 
 
-include_once './php/database.php';
+include_once './config_php/Database.php';
 $database = new Database();
 $db = $database->getConnection();
 
+
+$sql = "SELECT * FROM accommodation";
+$result = $db->query($sql);
 
 ?> 
 
@@ -19,7 +22,7 @@ $db = $database->getConnection();
 </head>
 
 
-<body>
+<body class="home">
 
     <header>
         <nav>
@@ -38,11 +41,11 @@ $db = $database->getConnection();
 
                 <form action="" method="POST">
                     <div class="form-content">
-                        <input type="text" placeholder="Chercher un gite" >
-                        <input type="date">
-                        <input type="date">
-                        <select name="number_traveller" id="number_traveller">
-                            <option value="1 Voyageur">1 Voyageur</option>
+                        <input type="text" placeholder="Chercher un gite" class="input_index">
+                        <input type="date"  class="input_index">
+                        <input type="date"  class="input_index">
+                        <select name="number_traveller" id="number_traveller" class="input_nombre">
+                            <option value="1 Voyageur" >1 Voyageur</option>
                             <option value="2 Voyageurs">2 Voyageurs</option>
                             <option value="3 Voyageurs">3 Voyageurs</option>
                             <option value="4 Voyageurs">4 Voyageurs</option>
@@ -61,9 +64,12 @@ $db = $database->getConnection();
 
             </div>
         </div>
+<div class="list_annonces">
 
     </main>
 
+
+    
     <footer>
         <div class="footbar">
 

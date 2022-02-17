@@ -1,7 +1,7 @@
 <?php
 
 
-include_once './php/database.php';
+include_once './config_php/database.php';
 $database = new Database();
 $db = $database->getConnection();
 
@@ -19,7 +19,7 @@ $db = $database->getConnection();
 </head>
 
 
-<body>
+<body class="home">
 
 <header>
         <nav>

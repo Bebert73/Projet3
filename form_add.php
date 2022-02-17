@@ -1,6 +1,6 @@
 <?php
-include_once './php/Database.php';
-include_once './php/add_hebergement.php';
+include_once './config_php/Database.php';
+include_once './add_php/add_hebergement.php';
 $database = new Database();
 $db = $database->getConnection();
 
@@ -21,36 +21,41 @@ $result = $db->query($sql);
 <body>
 <main>
         <div class="containerlarge">
-            
-            <div class="formulairelarge">
-	<a href="./admin.php">ADMIN FORM</a>
+        
+	<div class="formulairelarge">
+	<a class="retour" href="./admin.php">Retour</a>
 	<br/><br/>
 	<div id="msg"></div>
-	<form action="./php/add_hebergement.php" method="post" name="form1" >
-		<table width="25%" border="0">
+	<form action="./add_php/add_hebergement.php" method="post" enctype="multipart/form-data" name="form1" >
+		<table class="table-form">
 			<tr> 
-				<td>Titre</td>
+				<td class="form-text" >Titre</td>
 				<td><input type="text" name="acc"></td>
 			</tr>
 			<tr> 
-				<td>Description</td>
+				<td class="form-text" >Description</td>
 				<td><input type="text" name="desc"></td>
 			</tr>
 			<tr> 
-				<td>Nbr lits</td>
-				<td><input type="number" name="nb"></td>
+				<td class="form-text" >Image</td>
+				<td><input type="file" name="img"></td>
+			</tr>
+
+			<tr> 
+				<td class="form-text">lits</td>
+				<td><input type="number" name="nb" min="0"></td>
 			</tr>
 			<tr> 
-				<td>Nbr douches</td>
-				<td><input type="number" name="nbt"></td>
+				<td class="form-text">douches</td>
+				<td><input type="number" name="nbt" min="0"> </td>
 			</tr>
 			<tr> 
-				<td>Localisation</td>
+				<td class="form-text">Localisation</td>
 				<td><input type="text" name="gl"></td>
 			</tr>
 			<tr> 
-				<td>Prix</td>
-				<td><input type="number" name="price"></td>
+				<td class="form-text">Prix</td>
+				<td><input type="number" name="price" min="0"></td>
 			</tr>
 				<td></td>
 				<td><input type="submit" name="Submit" value="Ajouter"></td>
@@ -66,16 +71,17 @@ $result = $db->query($sql);
 			<?php 
 			if ($result->rowCount() > 0){
 			?> 
-			<table algin="center" border="1px" style="width:600px"; line-height:40px;> 
+			<table > 
 				<tr>
-					<th colspan="8"><h2> Gite enregister </h2> </th>
 			</tr>
+			
 					<t>
 					<th> ID </th>
 					<th> Titre </th>
 					<th> Description </th>
+					<th> image </th>
 					<th> Lits </th>
-					<th> salle de bains </th>
+					<th> Douche </th>
 					<th> localisation </th>
 					<th> prix </th>
 					<th> delete </th>
@@ -91,12 +97,13 @@ $result = $db->query($sql);
 			<td> <?php echo $rows['id']; ?> </td> 
 			<td> <?php echo $rows['accommodation_title']; ?> </td> 
 			<td> <?php echo $rows['description']; ?> </td> 
+			<td> <?php echo $rows['image']; ?> </td> 
 			<td> <?php echo $rows['number_of_beds']; ?> </td> 
 			<td> <?php echo $rows['number_of_bathrooms']; ?> </td> 
 			<td> <?php echo $rows['geographic_location']; ?> </td> 
 			<td> <?php echo $rows['price']; ?> </td> 
-			<td><a class="suppr" href="form_add.php?supprimer_tache=<?php echo $taches['id'] ?>"> X</a></td>
-			</tr>.
+			<td><a class="sup"  href="./add_php/delete.php?acco=<?php echo $rows['id'] ?>">x</a></td>
+			</tr>
 			<?php 
  			 }
 			echo "</table>";

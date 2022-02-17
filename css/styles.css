@@ -33,9 +33,12 @@ nav
     
 }
 
+.menu{
+    transition: transform 0.3s;
+}
+
 .menu:hover{
-    transform: scale(110%);
-    transition: width 0.1s, height 0.1s, background-color 0.1s, transform 0.8s;
+    transform: scale(125%); /* Animation */
 }
 
 .container
@@ -60,6 +63,7 @@ nav
     flex-direction: column;
     justify-content: space-around;
     padding: 0 100px ;
+    
 }
 .containerlarge
 {
@@ -69,6 +73,7 @@ nav
     z-index: 0;
     padding-bottom: 1000px;
     color: antiquewhite;
+
 }
 
 tr{
@@ -78,18 +83,28 @@ tr{
 
 
 }
+
+.sup{
+    color:red;
+}
+
 .formulairelarge
 {
     width: 60%;
-    height: 450px;
+    width: 0 auto;
     background-color: rgba(36, 36, 36, 0.733);
     border-radius: 2%;
     margin: 200px auto;
-    display: flex;
+    display:flex;
     flex-direction: column;
     justify-content: space-around 10px;
     padding: 10 100px ;
     color: antiquewhite;
+    
+}
+
+.button-admin{
+    color: black;
 }
 
 p{
@@ -125,7 +140,7 @@ a{
 
 input{
     background-color: transparent;
-    border: .4rem solid #858585;
+    border: .3rem solid #858585;
     border-radius: 60em;
     color: rgb(255, 255, 255);
     font-size: .9375rem;
@@ -151,12 +166,32 @@ input{
 
 .search:hover{
     color: white;
-    transform: scale(120%);
+    transform: scale(130%);
 }
 table{
     border: 10px;
     border-radius: 60em;
     width: 50%;
 
+}
+table{
+    border: 10px;
+    border-radius: 60em;
+    width: 50%;
+}
+.sup{
+    display: flex;
+    justify-content: center;
+}
+
+.form-text{
+    text-align: center ;
+}
+
+.table-form{
+    text-align:"center"; 
+    border:"1px"; 
+    width:"600px"; 
+    line-height:40px;
 }
 /* pull */
