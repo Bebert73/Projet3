@@ -1,16 +1,17 @@
 <?php
-
-
-include_once './php/database.php';
+include_once './config_php/database.php';
 $database = new Database();
 $db = $database->getConnection();
+
+$sql = "DELETE FROM accommodation WHERE id = ?";
+$q = $db->prepare($sql);
 
 
 ?> 
 
 <!DOCTYPE html>
 
-<head>
+<head >
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,14 +20,14 @@ $db = $database->getConnection();
 </head>
 
 
-<body>
+<body class="home">
 
-    <header>
+<header>
         <nav>
-            <a href="Projet3\index.php">Accueil</a>
-            <a href="Projet3\accommodation.php">Hebergement</a>
-            <a href="Projet3\contact.php">Contactez-nous</a>
-            <a href="Projet3\about.php">A-propos</a>
+            <a class="menu" href="index.php">Accueil</a>
+            <a class="menu" href="accommodation.php">Hebergement</a>
+            <a class="menu" href="contact.php">Contactez-nous</a>
+            <a class="menu" href="about.php">A-propos</a>
         </nav>
     </header>
 

@@ -3,7 +3,7 @@
     padding:0;
     box-sizing: border-box;
 }
-#index
+body
 {
     background-image:url(https://wallpaperaccess.com/full/435709.jpg);
     background-repeat: no-repeat;
@@ -29,6 +29,16 @@ nav
     top: 0;
     justify-content: space-around;
     align-items: center;
+
+    
+}
+
+.menu{
+    transition: transform 0.3s;
+}
+
+.menu:hover{
+    transform: scale(125%); /* Animation */
 }
 
 .container
@@ -41,9 +51,10 @@ nav
     
 }
 
+
 .formulaire
 {
-    width: 30%;
+    width: 40%;
     height: 450px;
     background-color: rgba(36, 36, 36, 0.733);
     border-radius: 2%;
@@ -52,8 +63,60 @@ nav
     flex-direction: column;
     justify-content: space-around;
     padding: 0 100px ;
+    
+}
+.containerlarge
+{
+    width: 100%;
+    max-width: 3000px;
+    height: 550px;
+    z-index: 0;
+    padding-bottom: 1000px;
+    color: antiquewhite;
+
 }
 
+tr{
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+
+
+}
+
+.sup{
+    color:red;
+}
+
+.formulairelarge
+{
+    width: 60%;
+    width: 0 auto;
+    background-color: rgba(36, 36, 36, 0.733);
+    border-radius: 2%;
+    margin: 200px auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around 10px;
+    padding: 10 100px ;
+    color: antiquewhite;
+    
+}
+
+.button-admin{
+    color: black;
+}
+
+p{
+    color: aliceblue;
+    padding: 40px 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+}
+h1{
+    color: aliceblue;
+    padding: 20px 1px;
+}
 a{
     text-decoration: none;
     color: white;
@@ -77,11 +140,13 @@ a{
 
 input{
     background-color: transparent;
-    border: 0.2rem solid #858585;
+    border: .3rem solid #858585;
     border-radius: 60em;
     color: rgb(255, 255, 255);
     font-size: .9375rem;
     font-weight: 300;
+    
+    
 }
 
 .form-content{
@@ -93,7 +158,7 @@ input{
 }   
 
 .search{
-    color: rgb(33, 218, 16);
+    color: rgb(255, 255, 255);
     font-size: 30px;
     transition: width 2s, height 2s, background-color 2s, transform 0.5s;
 
@@ -101,43 +166,28 @@ input{
 
 .search:hover{
     color: white;
-    transform: scale(120%);
+    transform: scale(130%);
+}
+table{
+    border: 10px;
+    border-radius: 60em;
+    width: 50%;
+
 }
 
-/* CSS DE LA PAGE D'ACCUEIL ADMIN */
-
-#admin
-{
-    background-image:url("../pic/background_panel_admin.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+.sup{
     display: flex;
     justify-content: center;
-    justify-items: center;
-    margin-top: 27em;
 }
 
-
-.btn-grad 
-{
-    background-image: linear-gradient(to right, #1A2980 0%, #26D0CE  51%, #1A2980  100%)
+.form-text{
+    text-align: center ;
 }
 
-.btn-grad {
-   margin: 10px;
-   padding: 15px 45px;
-   text-align: center;
-   text-transform: uppercase;
-   transition: 0.5s;
-   background-size: 200% auto;
-   color: white;            
-   box-shadow: 0 0 20px #eee;
-   border-radius: 10px;
-   display: block;
- }
-
- .btn-grad:hover {
-   background-position: right center; /* change the direction of the change here */
-   color: #fff;
-   text-decoration: none;
- }
+.table-form{
+    text-align:"center"; 
+    border:"1px"; 
+    width:"600px"; 
+    line-height:40px;
+}
+/* pull */
