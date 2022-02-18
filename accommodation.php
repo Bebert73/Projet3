@@ -19,7 +19,7 @@ $result = $db->query($sql);
 </head>
 
 
-<body class="home">
+<body class="body-hebergement">
 
 <header>
         <nav>
@@ -41,7 +41,7 @@ $result = $db->query($sql);
 <p class="product_nbr_beds">Nombre de lit: <?php echo $rows['number_of_beds']; ?></p>
 <p class="product_nbr_bath">Nombre de salle de bain: <?php echo $rows['number_of_bathrooms']; ?></p>
 <p class="product_location">Localisation : <?php echo $rows['geographic_location']; ?></p>
-<p class="product_price">Prix: <?php echo $rows['price']; ?></p>
+<p class="product_price">Prix: <?php echo $rows['price']; ?> €</p>
 </div>
 
 <?php 
