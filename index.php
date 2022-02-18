@@ -21,7 +21,7 @@ $result = $db->query($sql);
 
 <body class="home">
 
-    <header>
+    <header class="nav-bar">
         <nav>
             <a class="menu" href="index.php">Accueil</a>
             <a class="menu" href="accommodation.php">Hebergement</a>
