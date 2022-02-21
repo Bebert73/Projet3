@@ -41,7 +41,7 @@ while($rows = $result->fetch(PDO::FETCH_ASSOC)) {
 			</tr>
 			<tr> 
 				<td class="form-text" >Image</td>
-				<td><input type="file" name="img" multiple value="<?php echo $rows['image']; ?>"></td>
+				<td><input type="file" name="image" multiple value="<?php echo $rows['image']; ?>"></td>
 			</tr>
 
 			<tr> 
