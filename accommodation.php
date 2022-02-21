@@ -1,7 +1,9 @@
 <?php
-include_once './config_php/database.php';
+include_once './config_php/Database.php';
 $database = new Database();
 $db = $database->getConnection();
+$sql = "SELECT * FROM accommodation";
+$result = $db->query($sql);
 
 $sql = "DELETE FROM accommodation WHERE id = ?";
 $q = $db->prepare($sql);
@@ -20,31 +22,38 @@ $q = $db->prepare($sql);
 </head>
 
 
-<body class="home">
+<body class="body-hebergement">
 
-<header>
+<header class="nav-bar">
         <nav>
             <a class="menu" href="index.php">Accueil</a>
-            <a class="menu" href="accommodation.php">Hebergement</a>
+            <a class="menu" href="accommodation.php">Hebergements</a>
             <a class="menu" href="contact.php">Contactez-nous</a>
             <a class="menu" href="about.php">A-propos</a>
         </nav>
     </header>
+    <?php
+			while($rows = $result->fetch(PDO::FETCH_ASSOC)) {
 
-    <main>
-        <div class="container">
-            
-            <div class="formulaire">
-            <h1 class="title" style="color:white">Recherche de gite </h1>
+				?>
+<a href="./add_php/show.php?acco=<?php echo $rows['id'] ?>">
+<div class="container_product">
+<p class="product_img"><img src="./pic/<?php echo $rows['image']; ?> " alt="" width="270px" height="220px"></p>
+<h1 class="product_title"><?php echo $rows['accommodation_title']; ?></h1>
+<p class="product_desc"><?php echo $rows['description']; ?></p>
+<p class="product_nbr_beds">Nombre de lit: <?php echo $rows['number_of_beds']; ?></p>
+<p class="product_nbr_bath">Nombre de salle de bain: <?php echo $rows['number_of_bathrooms']; ?></p>
+<p class="product_location">Localisation : <?php echo $rows['geographic_location']; ?></p>
+<p class="product_price">Prix: <?php echo $rows['price']; ?> €</p>
+</div>
+</a>
 
-            </div>
-        </div>
-
-    </main>
+<?php 
+ 			 }
+			?> 
 
     <footer>
         <div class="footbar">
-
         </div>
     </footer>
 

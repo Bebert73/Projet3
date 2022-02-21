@@ -30,7 +30,8 @@ class Hebergement {
 
     /** fonction Insertdata pour tout simplement inserer des données dans la base SQL */
     public function insertData(){
-        include_once 'Database.php'; /** on a besoin de se connecter a la BDD */
+
+        include_once '../config_php/Database.php'; 
         $database = new Database();
         $db = $database->getConnection();
         
@@ -70,5 +71,3 @@ class Hebergement {
         
 
     }
-
-?> 

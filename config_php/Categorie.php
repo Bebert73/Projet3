@@ -14,9 +14,9 @@ class Categorie {
 
     /** fonction Insertdata pour tout simplement inserer des données dans la base SQL */
     public function insertData(){
-        include_once 'database.php'; /** on a besoin de se connecter a la BDD */
+        include_once '../config_php/Database.php'; 
         $database = new Database();
-        $db = $database->getConnection();
+        $db = $database->getConnection(); /** on a besoin de se connecter a la BDD */
 
         $sql="INSERT INTO category (name) 
         VALUES (:name)";

@@ -3,7 +3,7 @@
     padding:0;
     box-sizing: border-box;
 }
-body
+.home
 {
     background-image:url(https://wallpaperaccess.com/full/435709.jpg);
     background-repeat: no-repeat;
@@ -13,18 +13,24 @@ body
     background-color: transparent;
 }
 
-header{
-    width: 100%;
-    max-width: 3000px;
+.body-hebergement
+{
+    background-image:url(../pic/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
 }
 
-nav
+
+.nav-bar nav
 {   
     height: 60px;
     width: 100%;
     position:fixed;
     z-index: 100;
-    background-color: rgb(54, 54, 54);
+    background-color: rgb(0, 0, 0);
     display: flex;
     top: 0;
     justify-content: space-around;
@@ -107,15 +113,9 @@ tr{
     color: black;
 }
 
-p{
-    color: aliceblue;
-    padding: 40px 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: transparent;
-}
+
 h1{
     color: aliceblue;
-    padding: 20px 1px;
 }
 a{
     text-decoration: none;
@@ -195,3 +195,79 @@ table{
     line-height:40px;
 }
 /* pull */
+
+/* card */
+
+
+
+header{
+    height: 60px;
+    width: 100%;
+}
+
+.container_product{
+    display: grid;
+    grid-template-columns: 300px 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "a b b"
+                         "a c c" 
+                         "a c c" 
+                         "a d e" 
+                         "a f g" ;
+    width: 90%;
+    font-size: 15px;
+    background-color: #47474760;
+    border-radius: 15px;
+    overflow: hidden;
+    color: white;
+    height: 220px;
+    transition: 1s;
+    margin: 35px auto;
+}
+
+.product_title{
+    font-size: 22px;
+    text-align: center;
+    grid-area: b;
+}
+
+.product_img{
+    grid-area: a;
+    width: 300px;
+    height: 220px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container_product:hover{
+    transform: scale(1.05);
+}
+
+.product_desc{
+    grid-area: c;
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.product_nbr_beds{
+    text-align: center;
+    grid-area: d;
+
+}
+
+.product_nbr_bath{
+    text-align: center;
+    grid-area: e;
+}
+
+.product_location{
+    text-align: center;
+    grid-area: f;
+}   
+
+.product_price{
+    text-align: center;
+    grid-area: g;
+}

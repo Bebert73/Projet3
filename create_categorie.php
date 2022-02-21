@@ -1,8 +1,6 @@
 <?php
-include_once './config_php/Database.php';
+include_once './add_php/connexion.php';
 include_once './add_php/add_categorie.php';
-$database = new Database();
-$db = $database->getConnection();
 
 $sql = "SELECT * FROM category";
 $result = $db->query($sql);
