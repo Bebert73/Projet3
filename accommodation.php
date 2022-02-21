@@ -27,7 +27,7 @@ $q = $db->prepare($sql);
 <header class="nav-bar">
         <nav>
             <a class="menu" href="index.php">Accueil</a>
-            <a class="menu" href="accommodation.php">Hebergement</a>
+            <a class="menu" href="accommodation.php">Hebergements</a>
             <a class="menu" href="contact.php">Contactez-nous</a>
             <a class="menu" href="about.php">A-propos</a>
         </nav>
