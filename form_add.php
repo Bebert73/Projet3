@@ -1,8 +1,10 @@
 <?php
+
 include_once './config_php/Database.php';
-include_once './add_php/add_hebergement.php';
 $database = new Database();
 $db = $database->getConnection();
+
+include_once './add_php/add_hebergement.php';
 
 $sql = "SELECT * FROM accommodation";
 $result = $db->query($sql);
@@ -38,7 +40,7 @@ $result = $db->query($sql);
 			</tr>
 			<tr> 
 				<td class="form-text" >Image</td>
-				<td><input type="file" name="img"></td>
+				<td><input type="file" name="img" multiple></td>
 			</tr>
 
 			<tr> 
@@ -72,10 +74,6 @@ $result = $db->query($sql);
 			if ($result->rowCount() > 0){
 			?> 
 			<table > 
-				<tr>
-			</tr>
-			
-					<t>
 					<th> ID </th>
 					<th> Titre </th>
 					<th> Description </th>
@@ -84,9 +82,8 @@ $result = $db->query($sql);
 					<th> Douche </th>
 					<th> localisation </th>
 					<th> prix </th>
+					<th>Edit</th>
 					<th> delete </th>
-
-			</t>
 			<?php
 			while($rows = $result->fetch(PDO::FETCH_ASSOC)) {
 
@@ -97,12 +94,13 @@ $result = $db->query($sql);
 			<td> <?php echo $rows['id']; ?> </td> 
 			<td> <?php echo $rows['accommodation_title']; ?> </td> 
 			<td> <?php echo $rows['description']; ?> </td> 
-			<td> <?php echo $rows['image']; ?> </td> 
+			<td> <img style="width:100%" src="./pic/<?php echo $rows['image']; ?>" alt=""> </td> 
 			<td> <?php echo $rows['number_of_beds']; ?> </td> 
 			<td> <?php echo $rows['number_of_bathrooms']; ?> </td> 
 			<td> <?php echo $rows['geographic_location']; ?> </td> 
 			<td> <?php echo $rows['price']; ?> </td> 
-			<td><a class="sup"  href="./add_php/delete.php?acco=<?php echo $rows['id'] ?>">x</a></td>
+			<td><a class="edit"  href="./form_edit.php?edit=<?php echo $rows['id'] ?>">🟡</a></td>
+			<td><a class="sup"  href="./add_php/delete.php?acco=<?php echo $rows['id'] ?>">🔴</a></td>
 			</tr>
 			<?php 
  			 }
