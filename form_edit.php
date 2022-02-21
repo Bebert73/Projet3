@@ -19,7 +19,7 @@ while($rows = $result->fetch(PDO::FETCH_ASSOC)) {
 	<title>Ajouter Gite</title>
 </head>
 
-<body>
+<body class="body-hebergement" >
 <main>
         <div class="containerlarge">
         

@@ -36,7 +36,7 @@ $q = $db->prepare($sql);
 			while($rows = $result->fetch(PDO::FETCH_ASSOC)) {
 
 				?>
-
+<a href="./add_php/show.php?acco=<?php echo $rows['id'] ?>">
 <div class="container_product">
 <p class="product_img"><img src="./pic/<?php echo $rows['image']; ?> " alt="" width="270px" height="220px"></p>
 <h1 class="product_title"><?php echo $rows['accommodation_title']; ?></h1>
@@ -46,6 +46,7 @@ $q = $db->prepare($sql);
 <p class="product_location">Localisation : <?php echo $rows['geographic_location']; ?></p>
 <p class="product_price">Prix: <?php echo $rows['price']; ?> €</p>
 </div>
+</a>
 
 <?php 
  			 }
