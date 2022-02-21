@@ -3,7 +3,9 @@ include_once './config_php/Database.php';
 $database = new Database();
 $db = $database->getConnection();
 include_once './add_php/edit_hebergement.php';
-$sql = "SELECT * FROM accommodation ";
+
+$id = $_GET['edit'];
+$sql = "SELECT * FROM accommodation WHERE id = $id ";
 $result = $db->query($sql);
 while($rows = $result->fetch(PDO::FETCH_ASSOC)) {
 
