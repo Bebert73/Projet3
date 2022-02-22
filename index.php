@@ -71,7 +71,11 @@ $result = $db->query($sql);
 
     
     <footer>
-        <div class="footbar">
+        <div class="footer-bar">
+            <img class="logo1" src="https://img.search.brave.com/2hhYkQAB9JD94-wgYNxeVtBeKQBJc_zAFTjP4_QYbXs/rs:fit:1000:409:1/g:ce/aHR0cHM6Ly9sb2dv/bm9pZC5jb20vaW1h/Z2VzL3ZpdHRlbC1s/b2dvLnBuZw" alt="">
+        <a href="https://www.youtube.com"><h3 class="text-bar">CGV</h3></a>
+        <a href="https://www.youtube.com"><h3 class="text-bar">Mentions légales</h3></a>
+        <a href="https://www.youtube.com"><h3 class="text-bar">Mail</h3></a>
 
         </div>
     </footer>

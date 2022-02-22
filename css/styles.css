@@ -267,3 +267,20 @@ header{
     text-align: center;
     grid-area: g;
 }
+
+
+/* footer */
+.footer-bar{
+    height: 200px;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.815);
+}
+
+.text-bar{
+    color: white;
+    text-align: center;
+}
+
+.logo1{
+    height: 50%;
+}
