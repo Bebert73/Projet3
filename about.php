@@ -16,7 +16,7 @@
 
 <body class="home">
 
-<header>
+<header class="nav-bar">
         <nav>
             <a class="menu" href="index.php">Accueil</a>
             <a class="menu" href="accommodation.php">Hebergement</a>
@@ -25,19 +25,40 @@
         </nav>
     </header>
 
+
     <main>
         <div class="containerlarge">
             
         <div class="formulairelarge">
             <h1 class="title" style="color:white">A-propos </h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis adipisci magni sit. Veniam adipisci esse consequatur. Optio fugiat recusandae, impedit quidem aut saepe rerum, cumque aperiam magni asperiores in autem.
-            Cum unde expedita magni cumque obcaecati, veritatis ipsam temporibus autem vero mollitia a est ratione doloribus, explicabo illum repellat soluta quasi nulla perspiciatis repellendus molestias quas iusto. Iste, commodi vero.
-            Quae labore dolor eaque nisi deserunt! Cumque officia nisi esse nulla illo facere libero beatae animi eveniet asperiores incidunt, tempore perspiciatis ipsum sapiente! Magni impedit cumque provident, dignissimos explicabo laborum!
-            <br> <br> Optio asperiores qui ipsum odio sapiente! Fuga magni modi, animi laboriosam autem sed optio architecto aliquam voluptas, hic nulla exercitationem libero veniam temporibus rem, quidem tempore at soluta beatae voluptatibus. <br>
-            Facere repudiandae dolorum nobis officia, sed culpa explicabo? Aspernatur mollitia quisquam iste odit, consectetur est dolor magnam voluptatem vel maiores laudantium. Velit tempora iste perferendis doloremque quod! Nostrum, incidunt possimus?
-            Sequi nam repellat fugit voluptate, animi in praesentium adipisci fuga officia voluptas et iusto id ullam esse placeat sed. Sequi odio natus quibusdam itaque quidem voluptatibus consequatur optio facilis nulla.
-            Voluptate quod sunt quaerat est dolor, ex, molestiae ipsa sit, eaque doloremque assumenda repellendus. Esse sint illo consectetur cumque id quam dolor, consequuntur nisi non qui officia obcaecati ullam accusamus.
-            Odit, doloribus veniam voluptate pariatur nesciunt velit id quo reprehenderit. Vel molestias, a in quaerat dignissimos, aliquid nobis distinctio facilis et error ipsa, dolores maiores ad praesentium! Quia, maxime dolore.</p>
+            <h2>
+             Le bon gîtes®   
+            </h2>
+            <p>
+            <br>
+            <br>
+            Le bon gîtes® poursuit ses actions et conforte ses valeurs de solidarité et de partage en créant le bon gîtes®. Ce fonds de dotation permet d’accompagner les projets collectifs en matière d’Environnement au sens large, comme par exemple l’amélioration de la santé, la protection des territoires, l’écologie, la sauvegarde et la conservation du patrimoine, la formation au civisme, le développement durable, l’énergie, le secteur culturel…
+            <br>
+            <br>
+            <br>
+            <br>
+            Cette année, nous lançons 2 appels à projet sur les thématiques suivantes :
+            <br>
+            • Le premier projet aura un objectif social ou lié à la santé :
+            <br>
+            Ex : échanges intergénérationnels : accompagnement scolaire par des personnes retraitées
+            <br>
+            ou sauvegarde de savoir-faire locaux menacés : métiers traditionnels,...
+            <br>
+            ou amélioration de l’accessibilité pour des personnes en situation de handicap
+            <br>
+            • Le second projet, aura comme objectif la sauvegarde du patrimoine
+            <br>
+            Ex : réhabilitation et la valorisation du petit patrimoine bâti : four à pain, pigeonnier, lavoir, etc...
+            <br>
+            Chaque lauréat, se verra remettre une participation financière de 50% du coût du projet, plafonnée à 12 500 €. Outre l’octroi de la dotation financière, les lauréats feront l’objet d’une communication spécifique de la part de la Fédération Nationale Le bon Gîtes® : Relations Presse, réseaux sociaux, newsletter.
+            <br>
+            </p>
             </div>
         </div>
 
