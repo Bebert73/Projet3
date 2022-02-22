@@ -29,15 +29,14 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `accommodation` (
   `id` int(11) NOT NULL,
-  `id_category` int(11) NOT NULL,
   `accommodation_title` varchar(255) NOT NULL,
   `description` text NOT NULL,
   `picture` varchar(255) NOT NULL,
   `number_of_beds` int(11) NOT NULL,
   `number_of_bathrooms` int(11) NOT NULL,
   `geographic_location` varchar(255) NOT NULL,
-  `price` int(11) NOT NULL,
-  `availabillity` tinyint(1) NOT NULL
+  `price` int(11) NOT NULL
+
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
