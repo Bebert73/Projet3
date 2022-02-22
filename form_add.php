@@ -20,7 +20,7 @@ $result = $db->query($sql);
 	<title>Ajouter Gite</title>
 </head>
 
-<body>
+<body class="body-hebergement">
 <main>
         <div class="containerlarge">
         

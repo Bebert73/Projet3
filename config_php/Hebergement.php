@@ -32,7 +32,9 @@ class Hebergement {
     public function insertData(){
 
         include_once '../config_php/Database.php'; 
-
+        $database = new Database();
+        $db = $database->getConnection();
+        
         $dataImage = [
     
             'img_link' => '../pic/' . $_FILES['img']['name'], 

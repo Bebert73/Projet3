@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:3306
--- Généré le : jeu. 03 fév. 2022 à 13:55
+-- Généré le : lun. 21 fév. 2022 à 08:09
 -- Version du serveur : 5.7.33
 -- Version de PHP : 7.4.19
 
@@ -31,12 +31,15 @@ CREATE TABLE `accommodation` (
   `id` int(11) NOT NULL,
   `accommodation_title` varchar(255) NOT NULL,
   `description` text NOT NULL,
-  `picture` varchar(255) NOT NULL,
+  `image` varchar(255) NOT NULL,
   `number_of_beds` int(11) NOT NULL,
   `number_of_bathrooms` int(11) NOT NULL,
   `geographic_location` varchar(255) NOT NULL,
   `price` int(11) NOT NULL
+<<<<<<< HEAD
 
+=======
+>>>>>>> 14d608881d8841635054a3c8101b55a01b5a337c
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -49,13 +52,6 @@ CREATE TABLE `category` (
   `id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Déchargement des données de la table `category`
---
-
-INSERT INTO `category` (`id`, `name`) VALUES
-(3, 'dfdfdf');
 
 --
 -- Index pour les tables déchargées
@@ -81,13 +77,13 @@ ALTER TABLE `category`
 -- AUTO_INCREMENT pour la table `accommodation`
 --
 ALTER TABLE `accommodation`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT pour la table `category`
 --
 ALTER TABLE `category`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
