@@ -55,7 +55,7 @@
     max-width: 3000px;
     height: 550px;
     z-index: 0;
-    padding-bottom: 1000px;
+    padding-bottom: 50px;
     
 }
 
@@ -70,7 +70,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 0 100px ;
+    padding: 0 200px ;
     
 }
 .containerlarge
@@ -122,6 +122,23 @@ tr{
 a{
     text-decoration: none;
     color: white;
+}
+
+.hot{
+    text-align: center;
+    color: white;
+}
+
+.formulaire-ra{
+    width: 80%;
+    height: 450px;
+    background-color: rgba(128, 128, 128, 0.733);
+    border-radius: 2%;
+    margin: 200px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 100px ;
 }
 
 .search{
@@ -421,8 +438,8 @@ header{
 
 #slider{
     grid-area: b;
-    width: 300px;
-    height: 220px;
+    width: 800px;
+    height: 400px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -489,12 +506,49 @@ header{
     background-size: 200% auto;
     color: white;            
     box-shadow: 0 0 20px #eee;
+    transition: 0.5s;
     border-radius: 10px;
+    cursor: grab;
 }
 
 .product_btn>button:hover{
     background-position: right center; /* change the direction of the change here */
     color: #fff;
+    transform: scale(105%);
     text-decoration: none;
 }
+    
+
+.img_product{
+    width: 800px;
+    height: 400px;
+}
+
+
+/* sLIDER */
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+    }
+    
+    body { margin: 0; } 
+    div#slider { overflow: hidden; }
+    div#slider figure img { width: 20%; float: left; }
+    div#slider figure { 
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      text-align: left;
+      font-size: 0;
+      animation: 20s slidy infinite; 
+    }
+    
     
