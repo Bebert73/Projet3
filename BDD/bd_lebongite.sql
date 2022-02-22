@@ -36,6 +36,10 @@ CREATE TABLE `accommodation` (
   `number_of_bathrooms` int(11) NOT NULL,
   `geographic_location` varchar(255) NOT NULL,
   `price` int(11) NOT NULL
+<<<<<<< HEAD
+
+=======
+>>>>>>> 14d608881d8841635054a3c8101b55a01b5a337c
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------

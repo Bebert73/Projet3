@@ -54,6 +54,7 @@ $q = $db->prepare($sql);
 
     <footer>
         <div class="footbar">
+            
         </div>
     </footer>
 

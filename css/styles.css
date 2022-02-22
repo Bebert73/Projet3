@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);	
+
 *{
     margin: 0;
     padding:0;
@@ -114,7 +116,7 @@ tr{
 }
 
 
-h1{
+.herbegement>h1{
     color: aliceblue;
 }
 a{
@@ -190,11 +192,9 @@ table{
     width:"600px"; 
     line-height:40px;
 }
-/* pull */
+
 
 /* card */
-
-
 
 header{
     height: 60px;
@@ -284,3 +284,217 @@ header{
 .logo1{
     height: 50%;
 }
+/* fiche_product */
+
+.fiche_product{
+    background-image:url(../pic/pexels-pixabay-206665.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+}
+
+.fiche_product1{
+    background: rgba(0, 0, 0, 0.596);
+    width: 85%;
+    border-radius: 15px;
+    height: 80vh;
+    margin: 50px auto;
+    color: antiquewhite;
+
+}
+
+.fiche_product1>h1{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.fiche_product1>p{
+    text-align: center;
+}
+/* Carrousel */
+
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 800px;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 800px;
+  height: 450px;
+  background: #ccc;
+  text-align: center;
+  line-height: 300px;
+}
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+
+
+/* Fin du carrousel */
+
+header{
+    height: 60px;
+    width: 100%;
+}
+
+.fiche_product1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "a a"
+                         "b b" 
+                         "c c" 
+                         "d f" 
+                         "e g"
+                         "h h" ;
+    width: 90%;
+    font-size: 15px;
+    background-color: #474747ab;
+    border-radius: 15px;
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px black;
+    height: 850px;
+    transition: 1s;
+    margin: 35px auto;
+}
+
+.product_title1{
+    font-size: 30px;
+    text-align: center;
+    grid-area: a;
+    padding-top: 50px;
+    margin:25px 0;
+}
+
+#slider{
+    grid-area: b;
+    width: 300px;
+    height: 220px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.container_product:hover{
+    transform: scale(1.05);
+}
+
+.product_desc1{
+    grid-area: c;
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.product_nbr_beds1{
+    text-align: center;
+    grid-area: d;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.product_nbr_bath1{
+    text-align: center;
+    grid-area: e;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.product_location1{
+    text-align: center;
+    grid-area: f;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: 700;
+}   
+
+.product_price1{
+    text-align: center;
+    grid-area: g;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.product_btn{
+    grid-area: h;
+    text-align: center;
+}
+
+.product_btn>button{
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%);
+    margin: 20px 0 20px 0;
+    padding: 15px 45px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+}
+
+.product_btn>button:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+    
