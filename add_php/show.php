@@ -47,16 +47,19 @@ while($acco = $result->fetch(PDO::FETCH_ASSOC)) {
             <?php
                 while($img = $results->fetch(PDO::FETCH_ASSOC)) {
                     	?>
+<div class="carrousel">
 <div id="slider">
 <figure>
-<img src="../pic/<?php echo $img['image']?>">
+<img class="img-carrou" src="../pic/<?php echo $img['image']?>">
 </figure>
 </div>
                             <?php
                             } 
                             ?>
                         </ul>
+                        </div>
             </div>
+
 
             
             <p class="product_nbr_beds1">Nombre de lit : <?php echo $acco['number_of_beds'] ?> </p>

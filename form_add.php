@@ -40,7 +40,7 @@ $result = $db->query($sql);
 			</tr>
 			<tr> 
 				<td class="form-text" >Image</td>
-				<td><input type="file" name="img" multiple></td>
+				<td><input type="file" name="img[]" multiple></td>
 			</tr>
 
 			<tr> 
