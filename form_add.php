@@ -40,7 +40,7 @@ $result = $db->query($sql);
 			</tr>
 			<tr> 
 				<td class="form-text" >Image</td>
-				<td><input type="file" name="img[]" multiple></td>
+				<td><input type="file" name="img" multiple></td>
 			</tr>
 
 			<tr> 
@@ -99,7 +99,7 @@ $result = $db->query($sql);
 			<td> <?php echo $rows['number_of_bathrooms']; ?> </td> 
 			<td> <?php echo $rows['geographic_location']; ?> </td> 
 			<td> <?php echo $rows['price']; ?> </td> 
-			<td><a class="edit"  href="./form_edit.php?edit=<?php echo $rows['id'] ?>">🟡</a></td>
+			<td><a class="edit"  href="./form_edit.php?update=<?php echo $rows['id'] ?>">🟡</a></td>
 			<td><a class="sup"  href="./add_php/delete.php?acco=<?php echo $rows['id'] ?>">🔴</a></td>
 			</tr>
 			<?php 

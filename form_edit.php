@@ -4,7 +4,7 @@ $database = new Database();
 $db = $database->getConnection();
 include_once './add_php/edit_hebergement.php';
 
-$id = $_GET['edit'];
+$id = $_GET['update'];
 $sql = "SELECT * FROM accommodation WHERE id = $id ";
 $result = $db->query($sql);
 while($rows = $result->fetch(PDO::FETCH_ASSOC)) {
@@ -29,7 +29,7 @@ while($rows = $result->fetch(PDO::FETCH_ASSOC)) {
 	<a class="retour" href="./admin.php">Retour</a>
 	<br/><br/>
 	<div id="msg"></div>
-	<form action="./add_php/edit_hebergement.php" method="post" enctype="multipart/form-data" name="form1" >
+	<form action="" method="post" enctype="multipart/form-data" name="form1" >
 		<table class="table-form">
 			<tr> 
 				<td class="form-text" >Titre</td>
@@ -41,7 +41,7 @@ while($rows = $result->fetch(PDO::FETCH_ASSOC)) {
 			</tr>
 			<tr> 
 				<td class="form-text" >Image</td>
-				<td><input type="file" name="image" multiple value="<?php echo $rows['image']; ?>"></td>
+				<td><input type="file" name="image" multiple></td>
 			</tr>
 
 			<tr> 

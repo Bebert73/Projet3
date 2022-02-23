@@ -64,7 +64,8 @@ class EditHeberg {
             $stm->bindValue(':price', $this->price );
 
             $stm->execute(); /** on exec la fonction */
-    
+
+              
 
         } 
 
