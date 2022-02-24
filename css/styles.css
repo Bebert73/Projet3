@@ -102,13 +102,19 @@ tr{
     width: 0 auto;
     background-color: rgba(36, 36, 36, 0.733);
     border-radius: 2%;
-    margin: 200px auto;
+    margin: 100px auto;
     display:flex;
     flex-direction: column;
     justify-content: space-around 10px;
     padding: 10 100px ;
     color: antiquewhite;
     
+}
+
+
+.text-form{
+    margin: 2%;
+    padding: 5%;
 }
 
 .button-admin{
@@ -556,3 +562,28 @@ header{
       animation: 20s slidy infinite; 
     }
 
+/* CONTACT  */
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  

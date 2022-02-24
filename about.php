@@ -31,6 +31,7 @@
             
         <div class="formulairelarge">
             <h1 class="title" style="color:white">A-propos </h1>
+            <div class="text-form">
             <h2>
              Le bon gîtes®   
             </h2>
@@ -59,6 +60,8 @@
             Chaque lauréat, se verra remettre une participation financière de 50% du coût du projet, plafonnée à 12 500 €. Outre l’octroi de la dotation financière, les lauréats feront l’objet d’une communication spécifique de la part de la Fédération Nationale Le bon Gîtes® : Relations Presse, réseaux sociaux, newsletter.
             <br>
             </p>
+            </div>
+           
             </div>
         </div>
 
