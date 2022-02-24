@@ -298,7 +298,7 @@ header{
 
 /* footer */
 .footer-bar{
-    height: 200px;
+    height: 175px;
     z-index: 0;
     background-color: rgba(0, 0, 0, 0.815);
 }
