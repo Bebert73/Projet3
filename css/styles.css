@@ -193,7 +193,11 @@ table{
     width: 50%;
 
 }
-
+table{
+    border: 10px;
+    border-radius: 60em;
+    width: 50%;
+}
 .sup{
     display: flex;
     justify-content: center;

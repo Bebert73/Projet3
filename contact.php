@@ -13,7 +13,7 @@
 
 <body class="home">
 
-<header>
+<header class="nav-bar">
         <nav>
             <a class="menu" href="index.php">Accueil</a>
             <a class="menu" href="accommodation.php">Hebergement</a>
@@ -21,6 +21,7 @@
             <a class="menu" href="about.php">A-propos</a>
         </nav>
     </header>
+
 
     <main>
         <div class="containerlarge">
