@@ -2,6 +2,9 @@
  include_once '../config_php/Database.php';
  $database = new Database();
  $db = $database->getConnection();
+
+$sql = "SELECT * FROM accommodation LIMIT 1";
+$result = $db->prepare($sql);
  
  if(isset($_POST['update-data'])){
 	 $accoid = $_POST['accoid'];
@@ -31,15 +34,20 @@
  
 		 if($query_execute)
 		 {
-			echo('UPDATED ! Click here for show the new accommodation!');
-				} else {
+			header('Location: ../form_add.php');
+		} else {
 			 echo($query);
 		 }
  
 	 } catch (PDOException $e){
 		 echo $e->getMessage();
 	 }
+	 
  
  }
- ?>  
 
+
+?>
+<form action="../add_php/show.php?show=<?php echo $rows['id'] ?>">
+	<button type="submit" name="send" value="Go" >Page </button>
+	</form>

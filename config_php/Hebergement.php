@@ -62,6 +62,14 @@ class Hebergement {
             $stm->bindValue(':price', $this->price );
 
             $stm->execute(); /** on exec la fonction */
+
+                     
+		 if($stm)
+		 {
+            header('Location: ../form_add.php');
+        } else {
+			 echo($stm);
+		 }
     
 
         } 

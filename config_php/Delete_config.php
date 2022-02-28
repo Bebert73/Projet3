@@ -12,6 +12,13 @@ class Delete{
         $query->bindvalue(':id', $_GET['acco'], PDO::PARAM_INT);
 
         $query->execute();
+         
+		 if($query)
+		 {
+            header('Location: ../form_add.php');
+        } else {
+			 echo($query);
+		 }
 
     }
 
