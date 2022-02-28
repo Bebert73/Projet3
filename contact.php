@@ -57,12 +57,23 @@
 </div>
             </div>
         </div>
-
+        
+    
+        </div>
+        
     </main>
 
     <footer>
         <div class="footbar">
-
+           <a href="https://www.instagram.com/_qdp/"><img class="footlogo" src="pic\insta.png" alt="logoinsta"></a>
+            <a href="https://mobile.twitter.com/louaysayes"><img class="footlogo" src="pic\twitter.png" alt="logotwitter"></a>
+            <a href="https://wa.me/33676975271"><img class="footlogo" src="pic\whatsapp.png" alt="logowhatsapp"></a>
+            <a href="https://www.facebook.com/Onlineformapro/"><img class="footlogo" src="pic\facebook.png" alt="logofacebook"></a>
+        </div>
+        <div class="madeby">
+        <h3>
+            Louay SAYES Kevin BETTE 
+        </h3>
         </div>
     </footer>
 
