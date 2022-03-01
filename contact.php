@@ -45,13 +45,12 @@
 </div>
 
         </div>
-        
-    
-        </div>
-        
+
     </main>
 
     <footer>
+        <div class="footbar">
+
         </div>
     </footer>
 

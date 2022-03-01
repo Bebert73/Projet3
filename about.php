@@ -36,6 +36,8 @@
              Le bon gîtes®   
             </h2>
             <p>
+            <br>
+            <br>
             Le bon gîtes® poursuit ses actions et conforte ses valeurs de solidarité et de partage en créant le bon gîtes®. Ce fonds de dotation permet d’accompagner les projets collectifs en matière d’Environnement au sens large, comme par exemple l’amélioration de la santé, la protection des territoires, l’écologie, la sauvegarde et la conservation du patrimoine, la formation au civisme, le développement durable, l’énergie, le secteur culturel…
             <br>
             <br>
