@@ -69,7 +69,7 @@
     margin: 200px auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 0 200px ;
     
 }
@@ -163,6 +163,15 @@ a{
     color: rgb(255, 255, 255);
 }
 
+textarea{
+    background-color: transparent;
+    border: .3rem solid #858585;
+    border-radius: 60em;
+    color: rgb(255, 255, 255);
+    font-size: .9375rem;
+    font-weight: 300;
+}
+
 input{
     background-color: transparent;
     border: .3rem solid #858585;
@@ -176,9 +185,9 @@ input{
 
 .form-content{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: column;
-    height: 250px;
+    height: 350px;
     
 }   
 
@@ -562,6 +571,11 @@ header{
       animation: 20s slidy infinite; 
     }
 
-/* footer */
-
+/* Contact */
+#sujet{
+    height: 150px;
+    border-radius: 8px;
+    background-color: transparent;
+    
+}
 

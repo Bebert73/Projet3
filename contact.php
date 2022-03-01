@@ -24,38 +24,26 @@
 
 
     <main>
-        <div class="containerlarge">
+    <div class="container">
             
-            <div class="formulairelarge">
-            <div class="container">
+            <div class="formulaire">
 
-                        <h1 class="title">Recherche de gite </h1>
+                        <h1 class="title">Contactez nous !</h1>
 
                 <form action="" method="POST">
                     <div class="form-content">
-                        <input type="text" placeholder="Chercher un gite" class="input_index">
-                        <input type="date"  class="input_index">
-                        <input type="date"  class="input_index">
-                        <select name="number_traveller" id="number_traveller" class="input_nombre">
-                            <option value="1 Voyageur" >1 Voyageur</option>
-                            <option value="2 Voyageurs">2 Voyageurs</option>
-                            <option value="3 Voyageurs">3 Voyageurs</option>
-                            <option value="4 Voyageurs">4 Voyageurs</option>
-                            <option value="5 Voyageurs">5 Voyageurs</option>
-                            <option value="6 Voyageurs">6 Voyageurs</option>
-                            <option value="7 Voyageurs">7 Voyageurs</option>
-                            <option value="8 Voyageurs">8 Voyageurs</option>
-                            <option value="9 Voyageurs">9 Voyageurs</option>
-                            <option value="10 Voyageurs">10 Voyageurs</option>
-                            <option value="11 Voyageurs">11 Voyageurs</option>
-                            <option value="12+ Voyageurs">12 et plus</option>
-                        </select>                 
+                        <input type="text" placeholder="Nom" class="input_index">
+                        <input type="text" placeholder="Prénom" class="input_index">                        
+                        <input type="text" placeholder="Email" class="input_index">
+                        <textarea type="subject" placeholder="Sujet" class="input_index" id="sujet"></textarea>      
+        
+
                     </div>
                 </form>
-<a href="accommodation.php"><h5 class="search">Search</h5> </a>
+<a href="accommodation.php"><h5 class="search">Envoyer</h5> </a>
 
 </div>
-            </div>
+
         </div>
         
     
@@ -64,16 +52,6 @@
     </main>
 
     <footer>
-        <div class="footbar">
-           <a href="https://www.instagram.com/_qdp/"><img class="footlogo" src="pic\insta.png" alt="logoinsta"></a>
-            <a href="https://mobile.twitter.com/louaysayes"><img class="footlogo" src="pic\twitter.png" alt="logotwitter"></a>
-            <a href="https://wa.me/33676975271"><img class="footlogo" src="pic\whatsapp.png" alt="logowhatsapp"></a>
-            <a href="https://www.facebook.com/Onlineformapro/"><img class="footlogo" src="pic\facebook.png" alt="logofacebook"></a>
-        </div>
-        <div class="madeby">
-        <h3>
-            Louay SAYES Kevin BETTE 
-        </h3>
         </div>
     </footer>
 

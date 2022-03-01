@@ -64,13 +64,13 @@ $result = $db->query($sql);
         </div>
 <div class="list_annonces">
 
-    </main>
-    <div class="formulaire-ra">
-    <h1 class="hot">Coup de coeur ❤</h1>
-    <?php
+<?php
 			while($rows = $result->fetch(PDO::FETCH_ASSOC)) {
 
 				?>
+    </main>
+    <div class="formulaire-ra">
+    <h1 class="hot">Coup de coeur ❤</h1>
 <a href="./add_php/show.php?acco=<?php echo $rows['id'] ?>">
 <div class="container_product">
 <p class="product_img"><img src="./pic/<?php echo $rows['image']; ?> " alt="" width="270px" height="220px"></p>
@@ -88,16 +88,6 @@ $result = $db->query($sql);
  			 }
 			?> 
 
-    
-    <footer>
-        <div class="footer-bar">
-            <img class="logo1" src="https://img.search.brave.com/2hhYkQAB9JD94-wgYNxeVtBeKQBJc_zAFTjP4_QYbXs/rs:fit:1000:409:1/g:ce/aHR0cHM6Ly9sb2dv/bm9pZC5jb20vaW1h/Z2VzL3ZpdHRlbC1s/b2dvLnBuZw" alt="">
-        <a href="https://www.youtube.com"><h3 class="text-bar">CGV</h3></a>
-        <a href="https://www.youtube.com"><h3 class="text-bar">Mentions légales</h3></a>
-        <a href="https://www.youtube.com"><h3 class="text-bar">Mail</h3></a>
-
-        </div>
-    </footer>
 
 </body>
 

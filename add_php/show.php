@@ -67,7 +67,7 @@ while($acco = $result->fetch(PDO::FETCH_ASSOC)) {
             <p class="product_price1">prix : <?php echo $acco['price'] ?></p>
             <p class="product_desc1"><?php echo $acco['description'] ?></p>
             <p class="product_location1">Location : <?php echo $acco['geographic_location'] ?> </p>
-            <a class="product_btn" href=""><button> Reserver </button></a>
+            <a class="product_btn" href="../reservation.php?id=<?php echo $id; ?>"><button> Reserver </button></a>
 
         </div>
     </main>
@@ -76,7 +76,6 @@ while($acco = $result->fetch(PDO::FETCH_ASSOC)) {
 }
 
 ?>
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-    <script src="../JS/main.js"></script>
+
 </body>
 </html>
