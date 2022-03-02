@@ -557,6 +557,9 @@ header{
     100% { left: -400%; }
     }
 
+    .img-carrou {
+        width: 150%;
+      }
 
     body { margin: 0; } 
     div#slider { overflow: hidden; }

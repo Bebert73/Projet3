@@ -38,7 +38,7 @@ $q = $db->prepare($sql);
 				?>
 <a href="./add_php/show.php?acco=<?php echo $rows['id'] ?>">
 <div class="container_product">
-<p class="product_img"><img src="./pic/<?php echo $rows['image']; ?> " alt="" width="270px" height="220px"></p>
+<p class="product_img"><img src="./pic/<?php echo $rows['image1']; ?> " alt="" width="270px" height="220px"></p>
 <h1 class="product_title"><?php echo $rows['accommodation_title']; ?></h1>
 <p class="product_desc"><?php echo $rows['description']; ?></p>
 <p class="product_nbr_beds">Nombre de lit: <?php echo $rows['number_of_beds']; ?></p>

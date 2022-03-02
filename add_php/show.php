@@ -7,7 +7,7 @@ $id = $_GET['acco'];
 $sql = "SELECT * FROM accommodation WHERE id = $id ";
 $result = $db->query($sql);
 
-$sqls = "SELECT image FROM accommodation WHERE id = $id";
+$sqls = "SELECT image1 , image2 ,image3, image4, image5 FROM accommodation WHERE id = $id";
 $results = $db->query($sqls);
 
 ?> 
@@ -50,7 +50,11 @@ while($acco = $result->fetch(PDO::FETCH_ASSOC)) {
 <div class="carrousel">
 <div id="slider">
 <figure>
-<img class="img-carrou" src="../pic/<?php echo $img['image']?>">
+<img class="img-carrou" src="../pic/<?php echo $img['image1']?>">
+<img class="img-carrou" src="../pic/<?php echo $img['image2']?>">
+<img class="img-carrou" src="../pic/<?php echo $img['image3']?>">
+<img class="img-carrou" src="../pic/<?php echo $img['image4']?>">
+<img class="img-carrou" src="../pic/<?php echo $img['image5']?>">
 </figure>
 </div>
                             <?php

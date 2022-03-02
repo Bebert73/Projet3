@@ -32,32 +32,32 @@ $result = $db->query($sql);
 		<table class="table-form">
 			<tr> 
 				<td class="form-text" >Titre</td>
-				<td><input type="text" name="acc"></td>
+				<td><input type="text" name="acc" required></td>
 			</tr>
 			<tr> 
 				<td class="form-text" >Description</td>
-				<td><input type="text" name="desc"></td>
+				<td><input type="text" name="desc" required></td>
 			</tr>
 			<tr> 
 				<td class="form-text" >Image</td>
-				<td><input type="file" name="img" multiple></td>
+				<td><input type="file" accept = "image/jpg,image/jpeg,image/gif,image/png" name="img[]" id="img" multiple required></td>
 			</tr>
 
 			<tr> 
 				<td class="form-text">lits</td>
-				<td><input type="number" name="nb" min="0"></td>
+				<td><input type="number" name="nb" min="0" required></td>
 			</tr>
 			<tr> 
 				<td class="form-text">douches</td>
-				<td><input type="number" name="nbt" min="0"> </td>
+				<td><input type="number" name="nbt" min="0" required> </td>
 			</tr>
 			<tr> 
 				<td class="form-text">Localisation</td>
-				<td><input type="text" name="gl"></td>
+				<td><input type="text" name="gl" required></td>
 			</tr>
 			<tr> 
 				<td class="form-text">Prix</td>
-				<td><input type="number" name="price" min="0"></td>
+				<td><input type="number" name="price" min="0" required></td>
 			</tr>
 				<td></td>
 				<td><input type="submit" name="Submit" value="Ajouter"></td>
@@ -94,13 +94,13 @@ $result = $db->query($sql);
 			<td> <?php echo $rows['id']; ?> </td> 
 			<td> <?php echo $rows['accommodation_title']; ?> </td> 
 			<td> <?php echo $rows['description']; ?> </td> 
-			<td> <img style="width:100%" src="./pic/<?php echo $rows['image']; ?>" alt=""> </td> 
+			<td> <img style="width:100%" src="./pic/<?php echo $rows['image1']; ?>" alt=""> </td> 
 			<td> <?php echo $rows['number_of_beds']; ?> </td> 
 			<td> <?php echo $rows['number_of_bathrooms']; ?> </td> 
 			<td> <?php echo $rows['geographic_location']; ?> </td> 
 			<td> <?php echo $rows['price']; ?> </td> 
-			<td><a class="edit"  href="./form_edit.php?update=<?php echo $rows['id'] ?>">🟡</a></td>
-			<td><a class="sup"  href="./add_php/delete.php?acco=<?php echo $rows['id'] ?>">🔴</a></td>
+			<td><a class="edit"  href="./form_edit.php?update=<?php echo $rows['id'] ?>">📥</a></td>
+			<td><a class="sup"  href="./add_php/delete.php?acco=<?php echo $rows['id'] ?>">❌</a></td>
 			</tr>
 			<?php 
  			 }
