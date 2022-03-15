@@ -494,8 +494,7 @@ header{
 
     body { margin: 0; } 
     div#slider { overflow: hidden; }
-    div#slider figure img { width: 20%; float: left; } 
-    /* corriger la taille width : 20% */
+    div#slider figure img { width: 20.16%; float: left; } 
     div#slider figure { 
       position: relative;
       width: 496%;
