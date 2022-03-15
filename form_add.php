@@ -23,46 +23,47 @@ $result = $db->query($sql);
 <body class="body-hebergement">
 <main>
         <div class="containerlarge">
+
         
 	<div class="formulairelarge">
 	<a class="retour" href="./admin.php">Retour</a>
 	<br/><br/>
-	<div id="msg"></div>
 	<form action="./add_php/add_hebergement.php" method="post" enctype="multipart/form-data" name="form1" >
-		<table class="table-form">
+		
+
+	<table class="table-form">
 			<tr> 
 				<td class="form-text" >Titre</td>
-				<td><input type="text" name="acc" required></td>
+				<td><input  class="input-form" type="text" name="acc" required></td>
 			</tr>
 			<tr> 
 				<td class="form-text" >Description</td>
-				<td><input type="text" name="desc" required></td>
+				<td><input class="input-form" type="text" name="desc" required></td>
 			</tr>
 			<tr> 
 				<td class="form-text" >Image</td>
-				<td><input type="file" accept = "image/jpg,image/jpeg,image/gif,image/png" name="img[]" id="img" multiple required></td>
+				<td><input class="input-form" type="file" accept = "image/jpg,image/jpeg,image/gif,image/png" name="img[]" id="img" multiple required></td>
 			</tr>
 
 			<tr> 
 				<td class="form-text">lits</td>
-				<td><input type="number" name="nb" min="0" required></td>
+				<td><input class="input-form" type="number" name="nb" min="0" required></td>
 			</tr>
 			<tr> 
 				<td class="form-text">douches</td>
-				<td><input type="number" name="nbt" min="0" required> </td>
+				<td><input class="input-form" type="number" name="nbt" min="0" required> </td>
 			</tr>
 			<tr> 
 				<td class="form-text">Localisation</td>
-				<td><input type="text" name="gl" required></td>
+				<td><input class="input-form" type="text" name="gl" required></td>
 			</tr>
 			<tr> 
 				<td class="form-text">Prix</td>
-				<td><input type="number" name="price" min="0" required></td>
+				<td><input class="input-form" type="number" name="price" min="0" required></td>
 			</tr>
-				<td></td>
-				<td><input type="submit" name="Submit" value="Ajouter"></td>
-			</tr>
-		</table>
+				</table>
+				<td><input class="button-form" type="submit" name="Submit" value="Ajouter"></td>
+
 	</form>
 
 
@@ -73,35 +74,39 @@ $result = $db->query($sql);
 			<?php 
 			if ($result->rowCount() > 0){
 			?> 
-			<table > 
-					<th> ID </th>
-					<th> Titre </th>
-					<th> Description </th>
-					<th> image </th>
-					<th> Lits </th>
-					<th> Douche </th>
-					<th> localisation </th>
-					<th> prix </th>
-					<th>Edit</th>
-					<th> delete </th>
+				<div class="tableau-add">
+			<table class="table-add"> 
+				<tr class="tr-add">
+					<th class="th-add"> ID </th>
+					<th class="th-add"> Titre </th>
+					<th class="th-add"> Description </th>
+					<th class="th-add"> image </th>
+					<th class="th-add"> Lits </th>
+					<th class="th-add">Douche</th>
+					<th class="th-add">Lieux</th>
+					<th class="th-add"> prix </th>
+					<th class="th-add">Edit</th>
+					<th class="th-add" 	>  delete </th>
+					</tr>
 			<?php
 			while($rows = $result->fetch(PDO::FETCH_ASSOC)) {
 
 				?>
 				
 				<form action="" name="form2">
-			<tr>
-			<td> <?php echo $rows['id']; ?> </td> 
-			<td> <?php echo $rows['accommodation_title']; ?> </td> 
-			<td> <?php echo $rows['description']; ?> </td> 
-			<td> <img style="width:100%" src="./pic/<?php echo $rows['image1']; ?>" alt=""> </td> 
-			<td> <?php echo $rows['number_of_beds']; ?> </td> 
-			<td> <?php echo $rows['number_of_bathrooms']; ?> </td> 
-			<td> <?php echo $rows['geographic_location']; ?> </td> 
-			<td> <?php echo $rows['price']; ?> </td> 
-			<td><a class="edit"  href="./form_edit.php?update=<?php echo $rows['id'] ?>">📥</a></td>
-			<td><a class="sup"  href="./add_php/delete.php?acco=<?php echo $rows['id'] ?>">❌</a></td>
+			<tr class="tr-add">
+			<td class="td-add"> <?php echo $rows['id']; ?> </td> 
+			<td class="td-add"> <?php echo $rows['accommodation_title']; ?> </td> 
+			<td class="td-add-desc"> <?php echo $rows['description']; ?> </td> 
+			<td class="td-add"> <img class="zoom-img" style="width:100%" src="./pic/<?php echo $rows['image1']; ?>" alt=""> </td> 
+			<td class="td-add"> <?php echo $rows['number_of_beds']; ?> </td> 
+			<td class="td-add"> <?php echo $rows['number_of_bathrooms']; ?> </td> 
+			<td class="td-add"> <?php echo $rows['geographic_location']; ?> </td> 
+			<td class="td-add"> <?php echo $rows['price']; ?> </td> 
+			<td class="td-add"><a class="edit"  href="./form_edit.php?update=<?php echo $rows['id'] ?>">📥</a></td>
+			<td class="td-add"><a class="sup"  href="./add_php/delete.php?acco=<?php echo $rows['id'] ?>">❌</a></td>
 			</tr>
+			</div> 
 			<?php 
  			 }
 			echo "</table>";

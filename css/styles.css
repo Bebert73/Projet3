@@ -202,17 +202,7 @@ input{
     color: white;
     transform: scale(130%);
 }
-table{
-    border: 10px;
-    border-radius: 60em;
-    width: 50%;
 
-}
-table{
-    border: 10px;
-    border-radius: 60em;
-    width: 50%;
-}
 .sup{
     display: flex;
     justify-content: center;
@@ -223,10 +213,29 @@ table{
 }
 
 .table-form{
-    text-align:"center"; 
+    margin: 0 auto;
     border:"1px"; 
     width:"600px"; 
     line-height:40px;
+
+}
+
+.input-form{
+    width: 90%;
+}
+
+.tr-submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.button-form{
+    margin: 0 auto;
+}
+.button-form:hover{
+    background-color: red;
 }
 
 
@@ -348,81 +357,6 @@ header{
 
 .fiche_product1>p{
     text-align: center;
-}
-/* Carrousel */
-
-#slider {
-  position: relative;
-  overflow: hidden;
-  margin: 20px auto 0 auto;
-  border-radius: 4px;
-}
-
-#slider ul {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  height: 800px;
-  list-style: none;
-}
-
-#slider ul li {
-  position: relative;
-  display: block;
-  float: left;
-  margin: 0;
-  padding: 0;
-  width: 800px;
-  height: 450px;
-  background: #ccc;
-  text-align: center;
-  line-height: 300px;
-}
-
-a.control_prev, a.control_next {
-  position: absolute;
-  top: 40%;
-  z-index: 999;
-  display: block;
-  padding: 4% 3%;
-  width: auto;
-  height: auto;
-  background: #2a2a2a;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 18px;
-  opacity: 0.8;
-  cursor: pointer;
-}
-
-a.control_prev:hover, a.control_next:hover {
-  opacity: 1;
-  transition: all 0.2s ease;
-}
-
-a.control_prev {
-  border-radius: 0 2px 2px 0;
-}
-
-a.control_next {
-  right: 0;
-  border-radius: 2px 0 0 2px;
-}
-
-.slider_option {
-  position: relative;
-  margin: 10px auto;
-  width: 160px;
-  font-size: 18px;
-}
-
-
-/* Fin du carrousel */
-
-header{
-    height: 60px;
-    width: 100%;
 }
 
 .fiche_product1{
@@ -554,16 +488,14 @@ header{
     70% { left: -200%; }
     75% { left: -300%; }
     95% { left: -300%; }
-    100% { left: -400%; }
+    100% { left: 0%; }
     }
 
-    .img-carrou {
-        width: 150%;
-      }
 
     body { margin: 0; } 
     div#slider { overflow: hidden; }
-    div#slider figure img { width: 20%; float: left; }
+    div#slider figure img { width: 20%; float: left; } 
+    /* corriger la taille width : 20% */
     div#slider figure { 
       position: relative;
       width: 496%;
@@ -582,3 +514,44 @@ header{
     
 }
 
+/* Tableau */
+
+
+    .table-add {
+        border: medium solid #ffffff;
+        border-collapse: collapse;
+        width: 90%;
+        margin: 0 auto;
+        }
+
+        .th-add {
+        font-family: monospace;
+        border: thin solid #ffffff;
+        padding: 5px;
+        background-color: transparent;
+        }
+
+        .td-add-desc{
+            font-family: monospace;
+            padding: 20px;
+            border: thin solid #ffffff;
+            text-align: center;
+        }
+
+        .td-add {
+        font-family: monospace;
+        border: thin solid #ffffff;
+        width: 50%;
+        padding: 15px;
+        text-align: center;
+        background-color: transparent;        }
+
+        .zoom-img:active{
+            transform: scale(1500%);
+        }
+        .zoom-img{
+        cursor: grab;
+        }
+        .tableau-add{
+            margin: 100px auto;
+        }
